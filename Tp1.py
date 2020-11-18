@@ -11,7 +11,7 @@ import seaborn as sns
 st.title("Data App")
 
 # Récupération des fichiers dans le dossier actuel
-def file_selector(folder_path='./File'):
+def file_selector(folder_path='/Tp/File'):
     filenames = os.listdir(folder_path)
     selected_filename = st.selectbox('Choisir un fichier', filenames)
     return os.path.join(folder_path, selected_filename)
